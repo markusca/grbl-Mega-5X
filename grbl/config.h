@@ -135,9 +135,9 @@
 // Spindle or laser tools do not have the same hardware specifications.
 // When using both spindle and laser on the same machine it will be useful
 // to have spindle and laser on diffrents pins which can deliver the
-// differents outputs nedded.
+// differents outputs needed.
 //----------------------------------------------------------------------
-// ! IMPORTANT: When changing the SEPARATE_SPINDLE_LASER_PIN compil option,
+// ! IMPORTANT: When changing the SEPARATE_SPINDLE_LASER_PIN compile option,
 // don't forget to issue the reset factory defaults Grbl command: $RST=*
 // if you forget the $RST=* command after change, Grbl may have 
 // unpredictable behavior!
@@ -155,7 +155,7 @@
 // Use output PWM drived by GCode command M67(Analog Output,Synchronized) 
 // or GCode command M68(Analog Output, Immediate).
 //----------------------------------------------------------------------
-// ! IMPORTANT: When changing the USE_OUTPUT_PWM compil option,
+// ! IMPORTANT: When changing the USE_OUTPUT_PWM compile option,
 // don't forget to issue the reset factory defaults Grbl command: $RST=*
 // if you forget the $RST=* command after change, Grbl may have 
 // unpredictable behavior!
@@ -348,10 +348,10 @@
 // NOTE: PLEASE DO NOT USE THIS, unless you have a situation that needs it.
 // #define INVERT_LIMIT_PIN_MASK ((1<<X_LIMIT_BIT)|(1<<Y_LIMIT_BIT)) // Default disabled. Uncomment to enable.
 
-// Enable the following line to inverse logical behaviour (Normaly Open / Normaly Closed)
+// Enable the following line to inverse logical behaviour (Normally Open / Normally Closed)
 // of some min limit switches attached.
 //#define INVERT_MIN_LIMIT_PIN_MASK ((1<<AXIS_1) | (1<<AXIS_2) | (1<<AXIS_3))
-// Enable the following line to inverse logical behaviour (Normaly Open / Normaly Closed)
+// Enable the following line to inverse logical behaviour (Normally Open / Normally Closed)
 // of some max limit switches attached.
 //#define INVERT_MAX_LIMIT_PIN_MASK ((1<<AXIS_1) | (1<<AXIS_2) | (1<<AXIS_3))
 
@@ -377,7 +377,7 @@
 
 // pins (probe, safety door, cycle start, reset, feed hold). 
 // Invert the digital input status. Default is normaly open switch between pin
-// to GND, uncomment to use normaly closed switch.
+// to GND, uncomment to use normally closed switch.
 //#define INVERT_DIGITAL_INPUT_PIN_0 // Default disabled. Uncomment to enable.
 //#define INVERT_DIGITAL_INPUT_PIN_1 // Default disabled. Uncomment to enable.
 //#define INVERT_DIGITAL_INPUT_PIN_2 // Default disabled. Uncomment to enable.
@@ -521,7 +521,7 @@
 // With this enabled, Grbl sends back an echo of the line it has received, which has been pre-parsed (spaces
 // removed, capitalized letters, no comments) and is to be immediately executed by Grbl. Echoes will not be
 // sent upon a line buffer overflow, but should for all normal lines sent to Grbl. For example, if a user
-// sendss the line 'g1 x1.032 y2.45 (test comment)', Grbl will echo back in the form '[echo: G1X1.032Y2.45]'.
+// sends the line 'g1 x1.032 y2.45 (test comment)', Grbl will echo back in the form '[echo: G1X1.032Y2.45]'.
 // NOTE: Only use this for debugging purposes!! When echoing, this takes up valuable resources and can effect
 // performance. If absolutely needed for normal operation, the serial write buffer should be greatly increased
 // to help minimize transmission waiting within the serial write protocol.
@@ -603,7 +603,7 @@
 // Serial send and receive buffer size. The receive buffer is often used as another streaming
 // buffer to store incoming blocks to be processed by Grbl when its ready. Most streaming
 // interfaces will character count and track each block send to each block response. So,
-// increase the receive buffer if a deeper receive buffer is needed for streaming and avaiable
+// increase the receive buffer if a deeper receive buffer is needed for streaming and available
 // memory allows. The send buffer primarily handles messages in Grbl. Only increase if large
 // messages are sent and Grbl begins to stall, waiting to send the rest of the message.
 // NOTE: Buffer size values must be greater than zero and less than 256.
